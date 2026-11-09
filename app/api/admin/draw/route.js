@@ -4,6 +4,8 @@ import { ensureSchema, entryNo, sql } from "@/lib/db";
 import { EVENT } from "@/lib/config";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const fetchCache = "force-no-store";
 
 // Picks one winner at random from every entry that has not already won.
 // Each draw is recorded, so the history can be shown and audited.

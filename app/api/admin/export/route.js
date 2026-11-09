@@ -2,6 +2,8 @@ import { ensureSchema, entryNo, sql } from "@/lib/db";
 import { EVENT, INTERESTS, TOUCHPOINTS } from "@/lib/config";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const fetchCache = "force-no-store";
 
 const cell = (v) => {
   const s = String(v ?? "");

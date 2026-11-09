@@ -4,6 +4,8 @@ import { CONSENT, EVENT, INTERESTS, touchpointKey } from "@/lib/config";
 import { sendGuestEmail, sendLeadAlert } from "@/lib/email";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const fetchCache = "force-no-store";
 
 const clean = (v, max) => String(v ?? "").replace(/\s+/g, " ").trim().slice(0, max);
 
