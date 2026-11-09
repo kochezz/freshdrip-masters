@@ -8,3 +8,5 @@ out/
 qr/
 *.log
 .DS_Store
+print/node_modules/
+print/*.html
