@@ -34,6 +34,7 @@ export default async function Admin() {
       <div className="admin-wrap">
         <div className="admin-head">
           <div>
+            <img className="admin-logo" src="/vilagio-logo.webp" alt="Vilagio Trading Limited" width="520" height="359" />
             <span className="eyebrow">freshDRIP admin</span>
             <h1>{EVENT.name} leads</h1>
           </div>

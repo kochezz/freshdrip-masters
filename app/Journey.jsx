@@ -90,7 +90,7 @@ export default function Journey({ src, event, prize, interests, consent, downloa
           <button className="cta" onClick={() => setView("form")}>
             Enter the draw
           </button>
-          <p className="fine">Vilagio Trading Limited · Chingola, Zambia</p>
+          <Maker />
         </section>
       )}
 
@@ -141,6 +141,7 @@ export default function Journey({ src, event, prize, interests, consent, downloa
               Back
             </button>
           </form>
+          <Maker />
         </section>
       )}
 
@@ -174,6 +175,7 @@ export default function Journey({ src, event, prize, interests, consent, downloa
           <a className="ghost" href="/api/vcard">
             Save VTL to my contacts
           </a>
+          <Maker light />
         </section>
       )}
     </main>
@@ -189,6 +191,22 @@ function renderHeadline(text) {
       <em>freshDRIP</em>
       {text.slice(i + 9)}
     </>
+  );
+}
+
+function Maker({ light }) {
+  return (
+    <div className={`maker${light ? " light" : ""}`}>
+      <span>A product of</span>
+      <img
+        src={light ? "/vilagio-logo-light.webp" : "/vilagio-logo.webp"}
+        alt="Vilagio Trading Limited"
+        width="520"
+        height="359"
+        loading="eager"
+      />
+      <span>Vilagio Trading Limited · Chingola, Zambia</span>
+    </div>
   );
 }
 

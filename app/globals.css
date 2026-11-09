@@ -46,6 +46,11 @@ button, input { font: inherit; }
 .cta:hover { background: var(--navy-2); }
 .cta:disabled { opacity: .6; cursor: wait; }
 .fine { font-size: .72rem; color: #5c7a99; text-align: center; margin: 12px 0 0; }
+.maker { margin-top: auto; padding-top: 18px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; font-size: .68rem; color: #5c7a99; }
+.maker span:first-child { font: 600 .58rem var(--f-mono); letter-spacing: .16em; text-transform: uppercase; }
+.maker img { height: 58px; width: auto; }
+.maker.light { color: #8fb4be; }
+.v-welcome .maker { margin-top: 14px; padding-top: 0; }
 
 .v-form { background: var(--paper); }
 .steps { display: flex; gap: 4px; margin: 14px 0 4px; }
@@ -87,6 +92,7 @@ button, input { font: inherit; }
 .admin-page { background: #eef3f6; color: #10232e; min-height: 100dvh; }
 .admin-wrap { max-width: 1180px; margin: 0 auto; padding: 28px max(16px, env(safe-area-inset-right, 0px)) 60px max(16px, env(safe-area-inset-left, 0px)); display: flex; flex-direction: column; gap: 22px; }
 .admin-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.admin-logo { height: 40px; width: auto; display: block; margin-bottom: 8px; }
 .admin-head h1 { font: 800 1.7rem var(--f-display); margin: 4px 0 0; }
 .eyebrow { font: 600 .7rem var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: #0f8fa3; }
 .actions { display: flex; gap: 8px; flex-wrap: wrap; }
